@@ -1,0 +1,151 @@
+.profile-information-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 290px;
+}
+.profile-card img{
+    width: 170px;
+    height: 190px;
+    border-radius: 50%;
+}
+.profile-introduction p{
+    text-align: justify;
+    width: 450px;
+    line-height: 25px;
+}
+.profile-card {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: black;
+    color: white;
+    padding: 20px 40px 20px 40px;
+    border-radius: 10px;
+    opacity: 0.5;
+    transition: all 2s;
+}
+.profile-card:hover {
+    opacity: 1;
+    background-color: white;
+    color: black;
+}
+.fb-logo {
+    position: absolute;
+    font-size: 40px;
+    top: 70px;
+    right: 190px;
+    color: darkblue;
+}
+.mail-logo {
+    position: absolute;
+    font-size: 40px;
+    top: 140px;
+    right: 160px;
+    color: brown;
+}
+.name p {
+    text-align: center;
+}
+.fb-logo a {
+    color: darkblue;
+}
+.mail-logo a{
+    color: brown;
+}
+@media screen and (max-width: 460px) {
+    .profile-card img {
+        width: 100px;
+        height: 120px;
+        border-radius: 50%;
+    }
+    .profile-introduction p {
+        width: 280px;
+    }
+    .profile-card {
+        padding: 0 10px 0 10px;
+    }
+    .fb-logo {
+        font-size: 30px;
+        top: 50px;
+        right: 98px;
+    }
+    .mail-logo {
+        font-size: 30px;
+        top: 100px;
+        right: 85px;
+    }
+}
+.shows-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.shows-wrapper {
+    margin-top: 50px;
+    background-color: black;
+    color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    padding-inline-start: 20px;
+    width: 650px;
+    height: 500px;
+    z-index: 100;
+    overflow: hidden;
+    overflow-y: scroll;
+    opacity: 0.8;
+}
+.shows-content-lists {
+    margin: 20px 20px 20px 120px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 20px;
+    row-gap: 20px;
+}
+.shows-content-behavior {
+    background-color: white;
+    text-align: center;
+    color: black;
+    padding: 10px;
+}
+.genre-nav-bar {
+    position: fixed;
+    background-color: black;
+    z-index: 200;
+    padding-bottom: 182px;
+}
+.genre-nav-bar .genre {
+    margin-top: 30px;
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border-radius: 20px;
+    text-align: center;
+    font-weight: bold;
+    font-family: sans-serif;
+}
+.genre-nav-bar .genre:hover {
+    background-color: black;
+    color: white;
+}
+.shows-image img {
+    width: 200px;
+    height: 200px;
+}
+.shows-title,
+.shows-chapters {
+    text-align: center;
+}
+@media screen and (max-width: 732px) {
+    .shows-wrapper {
+        width: auto;
+    }
+    .shows-content-lists {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+}

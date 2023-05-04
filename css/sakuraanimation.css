@@ -1,0 +1,134 @@
+body {
+    background-image: url(../images/sakuratree1.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: top;
+    background-position-y: center;
+    margin: 0;
+}
+.leaves-animation-wrapper {
+    font-size: 13px;
+}
+.leaves-animation-wrapper div {
+    color: pink;
+    position: fixed;
+    padding: 0 100px 700px 0;
+}
+.leaves-animation-wrapper .first-child {
+    top: 100px;
+    left: 250px;
+    animation: left-to-right 10s ease-out forwards infinite;
+}
+.leaves-animation-wrapper .second-child {
+    top: 300px;
+    left: 900px;
+    animation: left-to-right 8s ease-out forwards infinite;
+}
+.leaves-animation-wrapper .third-child {
+    top: 140px;
+    left: 580px;
+    animation: left-to-right 11s ease-out forwards infinite;
+}
+.leaves-animation-wrapper .fourth-child {
+    top: 400px;
+    left: 450px;
+    animation: left-to-right 20s ease-out forwards infinite;
+}
+.leaves-animation-wrapper .fifth-child {
+    top: 460px;
+    left: 700px;
+    animation: left-to-right 15s ease-out forwards infinite;
+}
+.leaves-animation-wrapper .sixth-child {
+    top: 400px;
+    left: 1300px;
+    animation: left-to-right 30s ease-out forwards infinite;
+}
+.leaves-animation-wrapper .seventh-child {
+    top: 220px;
+    left: 1200px;
+    animation: left-to-right 34s ease-out forwards infinite;
+}
+.leaves-animation-wrapper .eight-child {
+    top: 500px;
+    left: 1100px;
+    animation: left-to-right 17s ease-out forwards infinite;
+}
+.leaves-animation-wrapper .ninth-child {
+    top: 50px;
+    left: 900px;
+    animation: left-to-right 25s ease-out forwards infinite;
+}
+.leaves-animation-wrapper {
+    margin: auto;
+}
+@keyframes left-to-right {
+    0% {
+        transform: translateX(0);
+    }
+    100% {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+}
+@media screen and (max-width: 600px) {
+    .leaves-animation-wrapper div {
+        font-size: 9px;
+    }
+    .leaves-animation-wrapper .first-child {
+        top: 100px;
+        left: 10px;
+        padding: 0 0 600px 0;
+        animation: left-to-right 10s ease-out forwards infinite;
+    }
+    .leaves-animation-wrapper .second-child {
+        top: 200px;
+        left: 110px;
+        padding: 0 0 500px 0;
+        animation: left-to-right 8s ease-out forwards infinite;
+    }
+    .leaves-animation-wrapper .third-child {
+        top: 400px;
+        left: 210px;
+        padding: 0 0 300px 0;
+        animation: left-to-right 11s ease-out forwards infinite;
+    }
+    .leaves-animation-wrapper .fourth-child {
+        top: 100px;
+        left: 310px;
+        padding: 0 0 600px 0;
+        animation: left-to-right 20s ease-out forwards infinite;
+    }
+    .leaves-animation-wrapper .fifth-child {
+        top: 200px;
+        left: 260px;
+        padding: 0 0 500px 0;
+        animation: left-to-right 15s ease-out forwards infinite;
+    }
+    .leaves-animation-wrapper .sixth-child {
+        top: 70px;
+        left: 180px;
+        padding: 0 0 630px 0;
+        animation: left-to-right 20s ease-out forwards infinite;
+    }
+    .leaves-animation-wrapper .seventh-child {
+        top: 350px;
+        left: 70px;
+        padding: 0 0 350px 0;
+        animation: left-to-right 14s ease-out forwards infinite;
+    }
+    .leaves-animation-wrapper .eight-child {
+        top: 300px;
+        left: 170px;
+        padding: 0 0 400px 0;
+        animation: left-to-right 17s ease-out forwards infinite;
+    }
+    .leaves-animation-wrapper .ninth-child {
+        top: 400px;
+        left: 330px;
+        padding: 0 0 300px 0;
+        animation: left-to-right 25s ease-out forwards infinite;
+    }
+}

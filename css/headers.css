@@ -1,0 +1,19 @@
+.home-header {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 190px;
+    color: antiquewhite;
+    background-color: black;
+    opacity: 0.5;
+    transition: opacity 2s;
+}
+.home-header:hover {
+    opacity: 1;
+}
+.home-header p {
+    text-align: center;
+    width: 160px;
+    color: antiquewhite;
+}
